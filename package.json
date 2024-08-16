@@ -1,0 +1,16 @@
+{
+  "name": "pratica04",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "runDev": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "gulp-cli": "^3.0.0"
+  }
+}
