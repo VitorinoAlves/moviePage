@@ -1,4 +1,8 @@
 @use 'hero';
+@use 'characters';
+@use 'trailer';
+@use 'footer';
+@use 'variaveis';
 
 *{
     padding: 0;
@@ -7,5 +11,43 @@
 }
 
 body, html {
-    //height: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+    color: variaveis.$corTexto;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 16px auto;
+}
+
+h2{
+    margin-bottom: 16px;
+    color: variaveis.$corTexto;
+}
+
+.text-with-image{
+    display: flex;
+
+    img{
+        max-height: 360px;
+        margin-right: 18px;
+    }
+}
+
+button{
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    margin-right: 18px;
+    padding: 16px;
+    background-color: variaveis.$corBotoes;
+    border: none;
+    outline: none;
+    color: variaveis.$corTextoBotoes;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(255, 196, 0);
+    }
 }

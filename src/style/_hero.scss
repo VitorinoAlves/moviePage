@@ -15,20 +15,7 @@
         top: 75%;
         left: 18%;
         &__buttons{
-            a{
-                font-family: "Anton", sans-serif;
-                letter-spacing: 1px;
-                border-radius: 12px;
-                margin-right: 18px;
-                padding: 14px;
-                background-color: rgb(255, 217, 0);
-                color: rgb(0, 0, 0);
-                text-decoration: none;
-    
-                &:hover{
-                    background-color: rgb(255, 196, 0);
-                }
-            }
+            
         }
         
     }

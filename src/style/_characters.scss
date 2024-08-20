@@ -1,0 +1,41 @@
+.characters{
+    &__accordion{
+        width: 100%;
+        text-align: left;
+        transition: 0.4s;
+        margin-bottom: 16px;
+        display: inline-block;
+        vertical-align: sub;
+
+
+        &:after {
+            content: '\00ff0b';
+            display: inline-block;
+            margin: -8px -8px 0 0px;
+            font-size: 2rem;
+            font-weight: 900;
+            vertical-align: sub;
+            text-align: right;
+        }
+
+        &--active{
+            &:after {
+                content: "\00ff0d"; /* Unicode character for "minus" sign (-) */
+            }
+        }
+
+        &__content{
+            height: 0;
+            overflow: hidden;
+            padding: 0 24px;
+            transition: height, 1s linear;
+
+            &--active{
+                height: auto;
+                padding-bottom: 24px;
+                padding-top: 24px;
+                transition: height, 1s linear;
+            }
+        }
+    }
+}

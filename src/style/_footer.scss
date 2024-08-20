@@ -1,0 +1,33 @@
+.footer{
+    background-color: #464646;
+
+    &__image{
+        display: flex;
+        justify-content: center;
+        &__logo{
+            height: 48px;
+            margin-top: 16px;
+        }
+    }
+    
+
+    &__links{
+        //margin-bottom: 16px;
+        &__list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            &__item{
+                padding: 16px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+}
