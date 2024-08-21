@@ -22,6 +22,8 @@ function defaultTask(cb) {
 exports.styles = buildStyles;
 exports.default = defaultTask;
 
+exports.default = gulp.parallel(buildStyles, compessJs);
+
 exports.watch = function(){
   gulp.watch('./src/style/*.scss', gulp.parallel(buildStyles));
   gulp.watch('./src/scripts/*.js', gulp.parallel(compessJs));

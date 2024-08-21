@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "runDev": "gulp watch"
+    "runDev": "gulp watch",
+    "build": "gulp"
   },
   "devDependencies": {
     "gulp": "^5.0.0",
